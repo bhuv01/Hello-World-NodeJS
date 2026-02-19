@@ -35,7 +35,7 @@ jobs:
 
       - name: Update GitOps Repo
         run: |
-          git clone https://${{ secrets.GIT_TOKEN }}@github.com/<your-username>/hello-gitops.git
+          git clone https://${{ secrets.GIT_TOKEN }}@github.com/bhuv01/hello-gitops.git
           cd hello-gitops/apps/hello
           sed -i "s|image:.*|image: ${{ secrets.DOCKER_USERNAME }}/hello-nodejs:$TAG|" deployment.yaml
           git config user.email "ci@github.com"
