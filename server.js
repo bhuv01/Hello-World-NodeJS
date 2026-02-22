@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
   }
 
   res.writeHead(200, { "Content-Type": "text/plain" });
-  res.end("Hello World from the GitOps + ArgoCD! First project Final 4 \n");
+  res.end("Hello World from the GitOps + ArgoCD! First project Final 5 \n");
 });
 
 server.listen(PORT, () => {
